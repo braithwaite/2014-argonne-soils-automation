@@ -21,7 +21,6 @@ of you looking to dive into a relatively thick paper on it can read about it
 
 Firstly, let's download bwa::
 
-    cd /root
     curl -L "http://downloads.sourceforge.net/project/bio-bwa/bwa-0.7.5a.tar.bz2?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fbio-bwa%2Ffiles%2F&ts=1379347638&use_mirror=softlayer-dal" > bwa-0.7.5a.tar.bz2
 
 And then decompress it::
@@ -33,10 +32,15 @@ Now, change into the directory with the source code and compile it::
     cd bwa-0.7.5a/
     make
     
+Ooops.  This didn't work.   Our EC2 node is so bare-bones it doesn't have some system headers BWA assumes.
+
+    sudo apt-get install -y zlib1g-dev 
+
+
 Finally, move the compiled executable to a location where the operating system
 can find it::
 
-    cp bwa /usr/local/bin
+    sudo cp bwa /usr/local/bin
 
 So what did we actually just do? bwa is offered as an open-source program -- that
 is, the actual code which defines its functionality is freely available. However,

@@ -10,4 +10,5 @@ Table of Contents
    novice-shell/04-loop
    novice-shell/05-script
    amazon/index
+   blast
    bwa_mapping

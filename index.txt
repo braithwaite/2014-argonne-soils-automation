@@ -34,6 +34,7 @@ Saturday 10/04
 
                    * Titus's notes on `BLAST <_static/cemi-lecture-blast.pptx.pdf>`__
                    * Lab 1: instances: :doc:`amazon/index`
+                   * Similarity search: :doc:`blast`
                    * 3:30: lecture, `Short read mapping <_static/cemi-lecture-mapping.pptx.pdf>`__
                    * Lab 2: :doc:`bwa_mapping`
 

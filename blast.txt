@@ -14,10 +14,10 @@ First, Download and install BLAST::
 
    cd /root
    
-   curl -O ftp://ftp.ncbi.nih.gov/blast/executables/release/2.2.24/blast-2.2.24-x64-linux.tar.gz
-   tar xzf blast-2.2.24-x64-linux.tar.gz
-   cp blast-2.2.24/bin/* /usr/local/bin
-   cp -r blast-2.2.24/data /usr/local/blast-data
+   curl -O ftp://ftp.ncbi.nih.gov/blast/executables/release/2.2.26/blast-2.2.26-x64-linux.tar.gz
+   tar xzf blast-2.2.26-x64-linux.tar.gz
+   cp blast-2.2.26/bin/* /usr/local/bin
+   cp -r blast-2.2.26/data /usr/local/blast-data
 
 .. @CTB navigating NCBI
 
@@ -29,6 +29,7 @@ Create a working directory on a large disk, and change to that working
 directory::
 
    cd /mnt
+   sudo chown $USER /mnt
    mkdir blast
    cd blast
 
@@ -96,15 +97,3 @@ Explore the NCBI bacterial genome site here: http://ftp.ncbi.nlm.nih.gov/genomes
 - '.fna' files are genomic DNA;
 - the rest are annotation files of various kinds.
 
-BONUS: plotting the BLAST e-value distribution from the CSV
------------------------------------------------------------
-
-IPython Notebook is running on these machines, and we can use that to
-do data analysis on the files.  For example, let's grab a notebook to
-plot blast e-value distributions::
-
-   cd /usr/local/notebooks
-   curl -O http://athyra.idyll.org/~t/plot-blast-evalues.ipynb
-
-Now, go to 'https://' + your machine name, enter password 'beacon', and
-open the 'plot-blast-evalues' notebook.

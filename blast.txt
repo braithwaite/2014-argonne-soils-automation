@@ -40,8 +40,7 @@ Download the E. coli MG1655 protein data set::
 This grabs that URL and saves the contents of 'NC_000913.faa' to the local
 disk.
 
-Grab a Prokka-generated set of proteins (we'll learn to do this on
-Thursday)::
+Grab a Prokka-generated set of proteins :: 
 
    curl -O http://athyra.idyll.org/~t/ecoli0104.faa
 

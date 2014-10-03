@@ -38,6 +38,28 @@ more elaborate.
 Before you begin
 ^^^^^^^^^^^^^^^^
 
+Windows
+-------
+
+You need to install `git bash <http://msysgit.github.io/>`__. 
+
+After installing git bash, run the
+`Software Carpentry installer <http://files.software-carpentry.org/SWCarpentryInstaller.exe>`__, 
+which installs tools inside of gitbash that make it more usable.
+
+Mac OS
+------
+
+You can *probably* get away without installing anything for the class;
+the unix-like tools you need are built in.
+
+Just in case something important does not work, you may need the (free) apple Xcode Developer
+bundle.  This should be available for free from the apple store or from 
+`Apple's developer site <https://developer.apple.com>`__.
+
+Nelle's files
+^^^^^^^^^^^^^
+
 In these lessons, we're going to explore Nelle's files. You can download
 the example files and directories which Nelle is using, so that you can
 explore the same files as described in the lesson. To do this, download

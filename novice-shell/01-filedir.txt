@@ -14,6 +14,11 @@ Objectives
    call.
 -  Demonstrate the use of tab completion, and explain its advantages.
 
+Cheat Sheet
+^^^^^^^^^^^
+
+`Quick guide to shell <http://wltrimbl.github.io/2013-11-14-woodshole/lessons/ref/shell.html>`__.
+
 Navigating the filesystem
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -38,10 +43,33 @@ more elaborate.
 Before you begin
 ^^^^^^^^^^^^^^^^
 
+Windows
+-------
+
+You need to install `git bash <http://msysgit.github.io/>`__. 
+
+After installing git bash, run the
+`Software Carpentry installer <http://files.software-carpentry.org/SWCarpentryInstaller.exe>`__, 
+which installs tools inside of gitbash that make it more usable.
+
+Mac OS
+------
+
+You can *probably* get away without installing anything for the class;
+the unix-like tools you need are built in.
+
+Just in case something important does not work, you may need the (free) apple Xcode Developer
+bundle.  This should be available for free from the apple store or from 
+`Apple's developer site <https://developer.apple.com>`__.
+
+Nelle's files
+^^^^^^^^^^^^^
+
 In these lessons, we're going to explore Nelle's files. You can download
 the example files and directories which Nelle is using, so that you can
 explore the same files as described in the lesson. To do this, download
-the zipped filesystem by clicking `this link <filesystem.zip>`__. Unpack
+the zipped filesystem by clicking 
+`this link <http://jdblischak.github.io/2014-09-18-chicago/novice/shell/filesystem.zip>`__. Unpack
 the zipped files - on Windows or a Mac, you can probably just
 double-click or click the downloaded file to unpack it. On linux you can
 type in a command like
@@ -56,7 +84,7 @@ directory to begin, by typing in the ``cd`` command:
 
 ::
 
-    $ cd Downloads/filesystem/users/nelle
+    $ cd ~/Downloads/filesystem/users/nelle
 
 Don't worry if you don't know what this command means yet! We will cover
 it soon.
@@ -70,10 +98,8 @@ of the current user, i.e., it shows us who the shell thinks we are:
 ::
 
     $ whoami
-
-::
-
     nelle
+    $
 
 More specifically, when we type ``whoami`` the shell:
 
@@ -94,8 +120,8 @@ directory <../../gloss.html#home-directory>`__:
 ::
 
     $ pwd
-
-    /users/nelle
+    /users/nelle/Downloads/filesystem/users/nelle
+    $
 
 To understand what a "home directory" is, let's have a look at how the
 file system as a whole is organized. At the top is the `root
@@ -162,8 +188,8 @@ don't have trailing slashes, like ``notes.txt``, ``pizza.cfg``, and
 between ``ls`` and ``-F``: without it, the shell thinks we're trying to
 run a command called ``ls-F``, which doesn't exist.
 
-    What's In A Name?
-    ^^^^^^^^^^^^^^^^^
+What's In A Name?
+-----------------
 
     You may have noticed that all of Nelle's files' names are "something
     dot something". This is just a convention: we can call a file
@@ -343,8 +369,8 @@ see, it also displays another special directory that's just called
 ``.``, which means "the current working directory". It may seem
 redundant to have a name for it, but we'll see some uses for it soon.
 
-    Orthogonality
-    ^^^^^^^^^^^^^
+Orthogonality
+-------------
 
     The special names ``.`` and ``..`` don't belong to ``ls``; they are
     interpreted the same way by every program. For example, if we are in

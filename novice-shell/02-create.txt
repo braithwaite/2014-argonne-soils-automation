@@ -219,6 +219,8 @@ If the directory contains sub-directories, ``rm -r`` does the same
 thing to them, and so on. It's very handy, but can do a lot of
 damage if used without care.
 
+More Practice
+^^^^^^^^^^^^^
 Let's create that directory and file one more time. (Note that this time
 we're running ``nano`` with the path ``thesis/draft.txt``, rather than
 going into the ``thesis`` directory and running ``nano`` on

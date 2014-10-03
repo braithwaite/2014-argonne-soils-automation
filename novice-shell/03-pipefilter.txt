@@ -267,6 +267,43 @@ your programs this way so that you and other people can put those
 programs into pipes to multiply their power.
 
 
+Downlading data with redirection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Nelle is frustrated and decides to download some 16S sequences to pass
+the time.    She can download a collection of datafiles automatically.
+There is a list of datasets in filesystem/data/metagenomics
+
+::
+    $ cd ~/Downloads/filesystem/data/metagenomics
+    $ ls
+       datasetlist.sh  generate_download_commands.sh
+    $
+
+This command will download a dataset from the MG-RAST API and save it in sequences.fasta:
+
+::
+      $ curl http://api.metagenomics.anl.gov/download/mgm4522007.3?file=050.1 > EbM1.fasta
+
+If we examine this command line, we run the command "curl"; we give it a url with
+id numbers for the dataset we want, and the output of curl is redirected to the
+file EbM1.fasta.
+
+generate_download_commands.sh uses columns 1 and 2 of the data table
+to construct a list of commands like that above to download the data from MG-RAST.
+
+To automatically download the first five, we run generate_download_commands.sh
+and then run download-volta-data.sh:
+
+::
+      $ bash generate_download_commands.sh
+      Generating download-volta-data.sh
+      $ bash download-volta-data.sh
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                      Dload  Upload   Total   Spent    Left  Speed
+      ....
+
+
 Nelle's Pipeline: Checking Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -70,7 +70,7 @@ the example files and directories which Nelle is using, so that you can
 explore the same files as described in the lesson. To do this, download
 the zipped filesystem:
 
-Download `filesystem.zip <http://wltrimbl.github.io/2014-argonne-soils-automation/novice-shell/filesystem.zip>`__. 
+Download `filesystem.zip <https://github.com/wltrimbl/2014-argonne-soils-automation/raw/master/novice-shell/filesystem.zip>`__. 
 
 Unpack the zipped files - on Windows or a Mac, you can probably just
 double-click or click the downloaded file to unpack it. On linux you can

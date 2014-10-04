@@ -32,11 +32,12 @@ Saturday 10/04
                  * 1:30 KBase – metabolic models for metagenomes (Andreas Wilke)
                  * 2:30-5:00pm Cloud computing to do more (Will Trimble)
 
-                   * Titus's notes on `BLAST <_static/cemi-lecture-blast.pptx.pdf>`__
-                   * Lab 1: instances: :doc:`amazon/index`
+                   * `Notes on cloud computing <_static/argonne-cloud-computing.pptx.pdf>`__
+                   * Lecture notes on `BLAST <_static/cemi-lecture-blast.pptx.pdf>`__
+                   * Starting instances:  :doc:`amazon/quickstart`
                    * Similarity search: :doc:`blast`
-                   * 3:30: lecture, `Short read mapping <_static/cemi-lecture-mapping.pptx.pdf>`__
-                   * Lab 2: :doc:`bwa_mapping`
+                   * Lecture notes on `short read mapping <_static/cemi-lecture-mapping.pptx.pdf>`__
+                   * Short read mapping: :doc:`bwa_mapping`
 
 ===============  =============================================================
 

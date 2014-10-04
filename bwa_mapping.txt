@@ -80,6 +80,7 @@ To speed up the demonstration, we will just map a subset of the reads rather tha
 the entire file, which is somewhat large (though small compared to many datasets).
 The head command outputs the first n lines of a file, by default 4::
 
+    mkdir /mnt/ecoli
     cd /mnt/ecoli
     gunzip -c ../SRR390202.pe.qc.fq.gz | head -400000 > ecoli_pe.fq
     gunzip -c ../SRR390202.se.qc.fq.gz | head -400000 > ecoli_se.fq
@@ -130,12 +131,10 @@ For additional resources on these tools, check out:
 Visualizing your Data with Tablet
 `````````````````````````````````
 
-First, install dropbox using :doc:`amazon/installing-dropbox`.
+Copy your mapping files to your local machine :
 
-Now, copy your mapping files and the reference to your dropbox folder::
-
-    cp aln.x.ecoli_NC_018658.bam.sorted.bam* /root/Dropbox
-    cp NC_018658.fna /root/Dropbox
+    scp -i soils.pem ubuntu@yourinstance:/mnt/ecoli/aln.x.ecoli_NC_018658.bam.sorted.bam*  .
+    scp -i soils.pem ubuntu@yourinstance/mnt/ecoli/NC_018658.fna .
 
 Although you can do many things with your alignments, one useful thing is to simply
 view them through a graphical interface. To demonstrate this, we'll use a program

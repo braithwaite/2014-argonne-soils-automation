@@ -1,13 +1,13 @@
 ===========================================================
-Logging into your new instance "in the cloud" (Mac version)
+Logging into your new instance "in the cloud" 
 ===========================================================
 
-OK, so you've created a running computer.  How do you get to it?
+OK, so we have rented a computer for you.  It will be yours
+alone for the rest of the day, and it is a blank slate.
+It doesn't have blast (yet) and doesn't have any data.
 
-The main thing you'll need is the network name of your new computer.
-To retrieve this, go to the instance view and click on the instance,
-and find the "Public DNS".  This is the public name of your computer
-on the Internet.
+The network name of your new computer we gave you on a scrap
+of paper.
 
 Copy this name, and connect to that computer with ssh under the username
 'ubuntu', as follows.
@@ -17,11 +17,11 @@ First, get the private key file from here: `soils.pem <http://www.mcs.anl.gov/~t
 It should be a .pem file in your Downloads 
 folder.  Move it onto your desktop.
 
-Next, start Terminal (in Applications... Utilities...) and type::
+Next, start Terminal (for mac) or gitbash (for windows) and type::
 
   chmod og-rwx ~/Desktop/soils.pem
 
-to set the permissions on the private key file to "closed to all evildoers".
+to set the permissions on the private key file to "closed to all evildoers".  
 
 Then type::
 
@@ -30,8 +30,8 @@ Then type::
 (Where you need to put your IP numbers here)
 
 Here, you're logging in as user 'ubuntu' to the machine
-'ec2-174-129-122-???.compute-1.amazonaws.com' using the authentication
-key located in 'amazon.pem' on your Desktop.
+'ec2-???-???-???-???.compute-1.amazonaws.com' using the authentication
+key located in 'soils.pem' on your Desktop.
 
 
 Note, you have to replace the stuff after the '@' sign with the name
@@ -44,6 +44,9 @@ of the host; see the red circle in:
 
 At the end you should see text and a prompt that look like this:
 
-
-.. image:: images/win-putty-4.png
+.. image:: images/victory-win.png
    :width: 50%
+
+.. image:: images/victory-mac.png
+   :width: 50%
+

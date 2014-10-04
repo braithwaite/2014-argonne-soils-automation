@@ -5,18 +5,19 @@ Getting started with Amazon EC2
 .. toctree::
    :maxdepth: 2
 
-   log-in-with-ssh-win-argonne
-   log-in-with-ssh-mac-argonne
-
-
+   log-in-with-ssh-argonne
 
 
 Amazon Web Services reference material
 --------------------------------------
-You can find a large amount of help materials on 
+You can find help online  
 configuring, managing, and otherwise using EC2's 
 interface.  
 
 `Instance types <http://aws.amazon.com/ec2/instance-types/>`__
 `Instance costs <http://aws.amazon.com/ec2/pricing/>`__
+
+You can find a more detailed walkthrough (with more
+steps!) at the `2013 CEMI workshop at Caltech <http://2013-caltech-workshop.readthedocs.org/en/latest/>`__.
+
 

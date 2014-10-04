@@ -36,7 +36,7 @@ Saturday 10/04
                    * Lecture notes on `BLAST <_static/cemi-lecture-blast.pptx.pdf>`__
                    * Starting instances:  :doc:`amazon/quickstart`
                    * Similarity search: :doc:`blast`
-                   * Lecture notes on `short read mapping <_static/cemi-lecture-mapping.pptx.pdf>`__
+                   * (Lengthy lecture notes on `short read mapping <_static/cemi-lecture-mapping.pptx.pdf>`__)
                    * Short read mapping: :doc:`bwa_mapping`
 
 ===============  =============================================================

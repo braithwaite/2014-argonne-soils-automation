@@ -6,19 +6,22 @@ OK, so we have rented a computer for you.  It will be yours
 alone for the rest of the day, and it is a blank slate.
 It doesn't have blast (yet) and doesn't have any data.
 
+If you are on windows and weren't here yesterday, you need to 
+**install `git bash <http://msysgit.github.io/>`__.**
+
 The network name of your new computer we gave you on a scrap
 of paper.
 
-Copy this name, and connect to that computer with ssh under the username
-'ubuntu', as follows.
+Copy this name, and connect to that computer with ssh **with the username
+'ubuntu'** 
 
-First, get the private key file from here: `soils.pem <http://www.mcs.anl.gov/~trimble/nodi/soils.pem>`__
+First, you must download the private key file from here: `soils.pem <http://www.mcs.anl.gov/~trimble/nodi/soils.pem>`__
 
 It should be a .pem file in your Downloads 
 folder.  Move it onto your desktop.
 
 Next, start Terminal (for mac) or gitbash (for windows) and type::
-
+ 
   chmod og-rwx ~/Desktop/soils.pem
 
 to set the permissions on the private key file to "closed to all evildoers".  
@@ -27,26 +30,21 @@ Then type::
 
   ssh -i ~/Desktop/soils.pem ubuntu@ec2-???-???-???-???.compute-1.amazonaws.com
 
-(Where you need to put your IP numbers here)
+(Where you need to put the address for your machine, distributed on a 
+sheet of paper, here)
 
-Here, you're logging in as user 'ubuntu' to the machine
+This command attempts to log in as user 'ubuntu' to the machine
 'ec2-???-???-???-???.compute-1.amazonaws.com' using the authentication
 key located in 'soils.pem' on your Desktop.
-
-
-Note, you have to replace the stuff after the '@' sign with the name
-of the host; see the red circle in:
-
-.. image:: images/ec2-dashboard-instance-name.png
-   :width: 50%
 
 ----
 
 At the end you should see text and a prompt that look like this:
 
-.. image:: images/victory-win.png
+.. image:: ../images/victory-win.png
    :width: 50%
 
-.. image:: images/victory-mac.png
+.. image:: ../images/victory-mac.png
    :width: 50%
 
+Congratulations, you now have CONTROL of your own EC2 server.

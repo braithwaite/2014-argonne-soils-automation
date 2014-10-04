@@ -1,14 +1,19 @@
 Basic EC2, command line, and BLAST
 ==================================
 
-Log into your AWS account, spin up a machine, log into the machine
-with SSH, and install Dropbox (see :doc:`amazon/index`).
+Log into your cloud instance machine with SSH (described in :doc:`amazon/quickstart`) and we can start to 
+* get the tools
+* get the data
+* get the comparison data
+* run the tools
+* get the data off
 
 Install BLAST and some other software
 -------------------------------------
 
-You should be starting at the prompt ending in '#', after logging in via
-SSH.
+You should be starting at the prompt that looks something like 'ubuntu@ip-10-98-166-81:~$', inside your Terminal or gitbash window.
+
+This is now not bash on your local machine, but bash on amazon's cloud instance.
 
 First, Download and install BLAST::
 

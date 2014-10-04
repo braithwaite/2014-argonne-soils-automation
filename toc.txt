@@ -9,6 +9,6 @@ Table of Contents
    novice-shell/03-pipefilter
    novice-shell/04-loop
    novice-shell/05-script
-   amazon/index
+   amazon/quickstart
    blast
    bwa_mapping

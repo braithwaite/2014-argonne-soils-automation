@@ -15,7 +15,7 @@ of paper.
 Copy this name, and connect to that computer with ssh **with the username
 'ubuntu'** 
 
-First, you must download the private key file from here: `soils.pem <http://www.mcs.anl.gov/~trimble/nodi/soils.pem>`__
+First, you must download the private key file from here: `soils.pem <http://www.mcs.anl.gov/~trimble/nodi/soils.zip>`__
 
 It should be a .pem file in your Downloads 
 folder.  Move it onto your desktop.

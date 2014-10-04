@@ -7,7 +7,7 @@ alone for the rest of the day, and it is a blank slate.
 It doesn't have blast (yet) and doesn't have any data.
 
 If you are on windows and weren't here yesterday, you need to 
-**install `git bash <http://msysgit.github.io/>`__.**
+**install git bash**: `git bash <http://msysgit.github.io/>`__.
 
 The network name of your new computer we gave you on a scrap
 of paper.

@@ -133,6 +133,7 @@ Visualizing your Data with Tablet
 
 Copy your mapping files to your local machine :
 
+::
     scp -i soils.pem ubuntu@yourinstance:/mnt/ecoli/aln.x.ecoli_NC_018658.bam.sorted.bam*  .
     scp -i soils.pem ubuntu@yourinstance/mnt/ecoli/NC_018658.fna .
 

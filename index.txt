@@ -27,7 +27,9 @@ Friday 10/03     * 1:30pm-5:00pm:  Automating things with the shell
 Saturday 10/04
                  * 9:00 Introduction (Adina Howe)
                  * 9:30 MEGAN (Daniel Huson)
-                 * 11:30 MG-RAST interface (Folker Meyer)
+                 * 11:30 MG-RAST website(Folker Meyer)
+                 * 12:00 MG-RAST API(Daniel Braithwaite)
+                      `install-matR.txt <_static/install-matR.txt>`__
                  * 12:30-1:30             Lunch
                  * 1:30 KBase – metabolic models for metagenomes (Andreas Wilke)
                  * 2:30-5:00pm Cloud computing to do more (Will Trimble)
